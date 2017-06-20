@@ -1,0 +1,1281 @@
+/*
+
+Custom CSS
+============
+
+Author:  #00005494
+Updated: March-April 2017
+Notes:	 Coursework #2 IIWT
+
+*/
+
+/* ----------------------------------------
+	Global Styles
+------------------------------------------- */
+
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+@import url('https://fonts.googleapis.com/css?family=Dosis');
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-image: url('../images/background.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	min-height: 100%;
+}
+
+/* ----------------------------------------
+	Navigation Bar
+------------------------------------------- */
+
+nav {
+	background-color: #000;
+	text-align: center;
+}
+
+nav ul {
+	width: 60%;
+	margin: 0 auto;
+}
+
+nav li {
+	float: left;
+	text-transform: uppercase;
+	width: 20%;
+}
+
+nav li a {
+	font-family: 'Dosis';
+	float: left;
+	display: block;
+	padding: 20px;
+	font-weight: bold;
+	font-size: 14px;
+	text-decoration: none;
+	color: #fff;
+	padding: 20px 30px;
+	height: auto;
+	width: 100%;
+	-webkit-transition: all ease 0.7s;
+	-moz-transition: all ease 0.7s;
+	-ms-transition: all ease 0.7s;
+	-o-transition: all ease 0.7s;
+	transition: all ease 0.7s;
+}
+
+nav li a:hover {
+	color: #000;
+	background-color: #94d500;
+	font-weight: bold;
+	-webkit-transition: all ease 0.7s;
+	-moz-transition: all ease 0.7s;
+	-ms-transition: all ease 0.7s;
+	-o-transition: all ease 0.7s;
+	transition: all ease 0.7s;
+}
+
+.active {
+	background-color: #94d500;
+	color: #000;
+	pointer-events: none;
+	font-weight: bold;
+}
+
+/* ----------------------------------------
+	Installing Clearfix
+------------------------------------------- */
+
+.clearfix:before,
+.clearfix:after {
+	content: "";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+.clearfix {
+	zoom: 1;
+}
+
+/* ----------------------------------------
+	Front Page
+------------------------------------------- */
+
+#front_page {
+	background-color: rgba(20, 19, 17, 0.3);
+	margin-top: 0px;
+	border-top: 3px solid #94d500;
+}
+
+#front_page h1 {
+	font-family: 'Dosis';
+	color: 	#fff;
+	text-align: right;
+	padding: 120px 100px 40px 200px;
+	font-size: 5.5em;
+	cursor: default;
+}
+
+#front_page p {
+	font-family: 'Lobster';
+	color: rgba(148,213,0, 1);
+	text-align: right;
+	padding: 0 100px 100px 400px;
+	font-size: 2.5em;
+	cursor: default;
+}
+
+/* ----------------------------------------
+	Main Section
+------------------------------------------- */
+
+.container {
+	background-color: rgba(20, 19, 17, 0.7);
+	padding: 30px;
+}
+
+#main_section h1 {
+	font-family: 'Lobster';
+	color: #94d500;
+	text-align: center;
+	font-size: 4.5em;
+	padding-bottom: 30px;
+	cursor: default;
+}
+
+#main_section p {
+	font-family: 'Dosis';
+	padding-right: 100px;
+	padding-left: 100px;
+	display: block;
+	font-size: 1.5em;
+	color: #fff;
+	font-weight: bold;
+	text-align: center;
+	line-height: 30px;
+	cursor: default;
+}
+
+#sub_section {
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 30px;
+	margin-bottom: 50px;
+	width: 1200px;
+	color: #fff;
+	text-align: center;
+	line-height: 20px;
+	cursor: default;
+}
+
+#sub_section h2 {
+	font-family: 'Lobster';
+	font-size: 1.5em;
+	color: #94d500;
+}
+
+#sub_section p {
+	font-family: 'Dosis';
+}
+
+#sub_section_01 {
+	width: 400px;
+	float: left;
+	background-color: #000;
+	padding-bottom: 30px;
+	border-bottom-left-radius: 20px;
+	border-top-left-radius: 20px; 
+}
+
+#sub_section_02 {
+	width: 400px;
+	float: left;
+	background-color: #000;
+	padding-bottom: 30px;
+}
+
+#sub_section_03 {	
+	width: 400px;
+	float: left;
+	background-color: #000;
+	padding-bottom: 30px;
+	border-bottom-right-radius: 20px;
+	border-top-right-radius: 20px; 
+}
+
+#sub_section p {
+	margin: 20px 50px;
+	text-align: center;
+}
+
+#sub_section hr {
+	width: 50%;
+	border-color: #242424;
+	margin-top: 20px;
+}
+
+.button {
+	font-family: 'Lobster';
+	text-align: center;
+	padding: 3px 35px 6px;
+	display: inline-block;
+	background-color: #000;
+	border-radius: 15px;
+	border-color: #94d500;
+	cursor: pointer;
+	-webkit-transition: all ease 0.7s;
+	-moz-transition: all ease 0.7s;
+	-ms-transition: all ease 0.7s;
+	-o-transition: all ease 0.7s;
+	transition: all ease 0.7s;
+}
+
+.button a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 16px;
+}
+
+.button:hover {
+	background-color: #94d500;
+	border-color: #000;
+	color: #000;
+	-webkit-transition: all ease 0.7s;
+	-moz-transition: all ease 0.7s;
+	-ms-transition: all ease 0.7s;
+	-o-transition: all ease 0.7s;
+	transition: all ease 0.7s;
+	transform: scale(1.1);
+}
+
+/* ----------------------------------------
+	Font Awesome Icons
+------------------------------------------- */
+
+#sub_section .fa {
+	color: #fff;
+	padding: 20px;
+}
+
+#brand_logo .fa {
+	color: #fff;
+	padding: 20px;	
+}
+
+/* ----------------------------------------
+	Week Window Global
+------------------------------------------- */
+
+#week_window {
+	width: 1200px;
+	margin: 0px auto 30px;
+}
+
+#week_window h1 {
+	color: #94d500;
+	text-align: left;
+	font-size: 2.5em;
+ 	font-family: 'Lobster';
+}
+
+/* ----------------------------------------
+	Week Artists Section
+------------------------------------------- */
+
+#week_artists {
+ 	width: 400px;
+ 	float: left;
+ 	background-color: rgba(0, 0, 0, 0.3);
+ 	padding: 20px 20px 20px 40px;
+ 	border-radius: 20px;
+ 	-webkit-transition: all ease 0.7s;
+	-moz-transition: all ease 0.7s;
+	-ms-transition: all ease 0.7s;
+	-o-transition: all ease 0.7s;
+	transition: all ease 0.7s;
+}
+
+#week_artists:hover {
+ 	background-color: rgba(0, 0, 0, 1);
+ 	-webkit-transition: all ease 0.7s;
+	-moz-transition: all ease 0.7s;
+	-ms-transition: all ease 0.7s;
+	-o-transition: all ease 0.7s;
+	transition: all ease 0.7s;
+}
+
+#week_artists h3 {
+	font-family: 'Dosis';
+}
+
+#week_artists p {
+	font-family: 'Dosis';
+}
+
+.artistName img {
+	float: left;
+	margin: 0px 20px 0px 0px;
+	padding: 5px 0px 0px 0px;
+	width: 150px;
+	height: auto;
+	border-radius: 20px;
+}
+
+.artistName a {
+	text-decoration: none;
+	font-style: normal; 
+	color: #94d500;
+	font-weight: bold;
+	-webkit-transition: all ease 0.7s;
+	-moz-transition: all ease 0.7s;
+	-ms-transition: all ease 0.7s;
+	-o-transition: all ease 0.7s;
+	transition: all ease 0.7s;
+}
+
+.artistName h3 {
+	margin: 20px 20px 0px 0px;
+	padding-top: 5px;
+}
+
+.artistName a:hover {
+	color: #fff;
+	-webkit-transition: all ease 0.7s;
+	-moz-transition: all ease 0.7s;
+	-ms-transition: all ease 0.7s;
+	-o-transition: all ease 0.7s;
+	transition: all ease 0.7s;
+}
+
+.artistName h4 {
+	color: #fff;
+	margin: 5px 0;
+}
+
+.artistName h4:hover {
+	cursor: default;
+}
+
+.artistName p {
+	color: #ccc;
+	cursor: default;
+}
+
+#artist_01 img {
+	float: left;
+	margin: 0px 20px 25px 0px;
+	padding: 0px 0px 0px 0px;
+	width: 150px;
+	height: auto;
+	border-radius: 20px;
+}
+
+#artist_01 a {
+	text-decoration: none;
+	font-style: normal; 
+	color: #94d500;
+	font-weight: bold;
+	-webkit-transition: all ease 0.7s;
+	-moz-transition: all ease 0.7s;
+	-ms-transition: all ease 0.7s;
+	-o-transition: all ease 0.7s;
+	transition: all ease 0.7s;
+}
+
+#artist_01 h3 {
+	margin: 21px 20px 0px 0px;
+}
+
+#artist_01 a:hover {
+	color: #fff;
+	-webkit-transition: all ease 0.7s;
+	-moz-transition: all ease 0.7s;
+	-ms-transition: all ease 0.7s;
+	-o-transition: all ease 0.7s;
+	transition: all ease 0.7s;
+}
+
+#artist_01 h4 {
+	color: #fff;
+	margin: 5px 0;
+}
+
+#artist_01 h4:hover {
+	cursor: default;
+}
+
+#artist_01 p {
+	color: #ccc;
+	cursor: default;
+}
+
+#artist_02 img {
+	float: left;
+	margin: 0px 20px 25px 0px;
+	padding: 0px 0px 0px 0px;
+	width: 150px;
+	height: auto;
+	border-radius: 20px;
+}
+
+#artist_02 a {
+	text-decoration: none;
+	font-style: normal; 
+	color: #94d500;
+	font-weight: bold;
+	-webkit-transition: all ease 0.7s;
+	-moz-transition: all ease 0.7s;
+	-ms-transition: all ease 0.7s;
+	-o-transition: all ease 0.7s;
+	transition: all ease 0.7s;
+}
+
+
+#artist_02 h3 {
+	margin: 21px 20px 0px 0px;
+}
+
+#artist_02 a:hover {
+	color: #fff;
+	-webkit-transition: all ease 0.7s;
+	-moz-transition: all ease 0.7s;
+	-ms-transition: all ease 0.7s;
+	-o-transition: all ease 0.7s;
+	transition: all ease 0.7s;
+}
+
+#artist_02 h4 {
+	color: #fff;
+	margin: 5px 0;
+}
+
+#artist_02 h4:hover {
+	cursor: default;
+}
+
+#artist_02 p {
+	color: #ccc;
+	cursor: default;
+}
+ 
+/* ----------------------------------------
+	Week Tracks Section
+------------------------------------------- */
+
+#week_tracks {
+	width: 400px;
+	float: left;
+  	padding: 20px 30px 15px 30px;
+  	border-radius: 20px;
+  	-webkit-transition: all ease 0.7s;
+	-moz-transition: all ease 0.7s;
+	-ms-transition: all ease 0.7s;
+	-o-transition: all ease 0.7s;
+	transition: all ease 0.7s;
+	cursor: default;
+}
+
+#week_tracks:hover {
+	background-color: rgba(0, 0, 0, 1);
+	-webkit-transition: all ease 0.7s;
+	-moz-transition: all ease 0.7s;
+	-ms-transition: all ease 0.7s;
+	-o-transition: all ease 0.7s;
+	transition: all ease 0.7s;
+}
+
+
+#week_tracks {
+	font-family: 'Dosis';
+}
+
+.track {
+	background-color: #0a0a0a;
+	border-radius: 20px;
+}
+
+#week_tracks h1 {
+	margin-bottom: 25px;
+}
+
+#week_tracks a {
+	text-decoration: none;
+	font-style: normal; 
+	float: left;
+}
+
+#week_tracks h2 {
+	float: left;
+	color: #ccc;
+	font-size: 4em;
+	margin: 13px 20px 17px;
+}
+
+#week_tracks .track_title:hover {
+	-webkit-transition: all ease 0.7s;
+	-moz-transition: all ease 0.7s;
+	-ms-transition: all ease 0.7s;
+	-o-transition: all ease 0.7s;
+	transition: all ease 0.7s;
+	color: #fff;
+}
+
+#week_tracks .track_title {
+	color: #94d500;
+	font-size: 1.5em;
+	margin: 25px 0px 0px 0px;
+	-webkit-transition: all ease 0.7s;
+	-moz-transition: all ease 0.7s;
+	-ms-transition: all ease 0.7s;
+	-o-transition: all ease 0.7s;
+	transition: all ease 0.7s;
+}
+
+#week_tracks .track_author {
+	color: #fff;
+	margin: 6px 145px 0px 0px;
+}
+
+#week_tracks .track_author:hover {
+	text-decoration: underline;
+}
+
+#track_01 {
+	margin-bottom: 10px;
+}
+
+#track_02 {
+	margin-bottom: 10px;
+}
+
+#track_03 {
+	margin-bottom: 10px;
+}
+
+#track_04 {
+	margin-bottom: 10px;
+}
+
+#track_05 {
+	margin-bottom: 0px;
+}
+
+/* ----------------------------------------
+	Week Events Section
+------------------------------------------- */
+
+#week_events {
+	width: 400px;
+	float: left;
+ 	background-color: rgba(0, 0, 0, 0.4);
+ 	padding: 20px 20px 20px 40px;
+ 	border-radius: 20px; 
+ 	cursor: default;
+ 	-webkit-transition: all ease 0.7s;
+	-moz-transition: all ease 0.7s;
+	-ms-transition: all ease 0.7s;
+	-o-transition: all ease 0.7s;
+	transition: all ease 0.7s;
+}
+
+#week_events:hover {
+	background-color: rgba(0, 0, 0, 1);
+	-webkit-transition: all ease 0.7s;
+	-moz-transition: all ease 0.7s;
+	-ms-transition: all ease 0.7s;
+	-o-transition: all ease 0.7s;
+	transition: all ease 0.7s;
+}
+
+#week_events .fa {
+	color: #ccc;
+	padding: 0px 15px 10px 0px;
+}
+
+#week_events h5 {
+	color: #fff;
+	font-family: 'Dosis';
+}
+
+#week_events h4 {
+	color: #94d500;
+	font-family: 'Dosis';
+	margin: 25px 0px 15px 0;
+	font-weight: bold;
+}
+
+#week_events hr {
+	float: left;
+	width: 85%
+}
+
+#news_02 h4 {
+	margin-top: 40px;
+} 
+
+#news_03 h4 {
+	margin-top: 40px;
+} 
+
+#news_03 h5:last-child {
+	margin-bottom: 4px;
+}
+
+/* ----------------------------------------
+	Footer
+------------------------------------------- */
+
+footer {
+	margin: 0 auto;
+	background-color: rgba(20, 19, 17, 1);
+	position: relative;
+}
+
+footer h1 {
+	font-family: 'Dosis';
+	color: #94d500;
+	font-weight: bold;
+	text-align: left;
+	padding-left: 125px;
+	font-size: 2em;
+	margin: 20px 0;
+	cursor: default;
+}
+
+footer ul {
+	margin-bottom: 50px;
+}
+
+footer li {
+	display: block;
+	text-align: left;
+	padding: 3px 0px 3px 125px;
+	font-size: 1.1em;
+	border-right: solid 2px #94d500;
+}
+
+footer a {
+	font-family: 'Dosis';
+	text-decoration: none;
+	font-style: normal;
+	color: #a2a2a2;
+}
+
+footer a:hover {
+	color: #fff;
+}
+
+#sitemap {
+	width: 350px;
+	float: left;
+}
+
+#about {
+	width: 350px;
+	float: left;
+}
+
+#brand_logo {
+	width: 500px;
+	float: right;
+}
+
+#brand_logo .fa {
+	color: #ccc;
+	padding-top: 50px;
+	padding-left: 100px;
+	float: left;
+}
+
+#brand_logo h2 {
+	font-family: 'Dosis';
+	color: #94d500;
+	padding-top: 65px;
+	font-size: 3em;
+	cursor: default;
+}
+
+.activeFooter {
+	color: #fff;
+	pointer-events: none;
+	cursor: default;
+}
+
+/* ----------------------------------------
+	About Page
+------------------------------------------- */
+
+#breadcrumbs {
+	padding: 20px 1000px 20px 30px;
+	border-top: 3px solid #94d500;
+	font-family: 'Dosis';
+	background-color: rgba(20, 19, 17, 0.4);
+}
+
+#breadcrumbs a {
+	text-decoration: none;
+	color: #ccc;
+	font-size: 1.5em;
+}
+
+#breadcrumbs a:hover {
+	text-decoration: underline;
+}
+
+#breadcrumbs ul {
+	padding: 15px;
+	background-color: rgba(20, 19, 17, 1);
+	border-radius: 20px;
+}
+
+#breadcrumbs li {
+	display: inline-block;
+	font-style: normal;
+}
+
+#breadcrumbs .active_bread {
+	cursor: default;
+	color: #fff;
+	pointer-events: none;
+}
+
+#slash {
+	color: #94d500;
+	font-weight: bold;
+}
+
+.container_about {
+	background-color: rgba(20, 19, 17, 0.4);
+	padding-bottom: 50px;
+}
+
+#about_main {
+	color: #fff;
+	margin: 0px 200px 0px 200px;
+	background-color: rgba(20, 19, 17, 1);
+	font-size: 1.2em;
+	border-radius: 20px;
+	font-family: 'Dosis';
+	cursor: default;
+}
+
+#about_main h1 {
+	text-align: left;
+	padding: 20px 150px;
+	font-size: 2.5em;
+	color: #94d500;
+}
+
+#about_main p {
+	padding: 5px 150px 10px;
+	text-align: left; 
+	font-size: 1em;
+}
+
+#about_main p:last-child {
+	padding-bottom: 150px;
+}
+
+#about_main h2 {
+	padding: 10px 150px 50px;
+	font-weight: bold;
+}
+
+#about_main a {
+	text-decoration: none;
+	color: #94d500;
+}
+
+#about_main a:hover {
+	text-decoration: underline;
+	color: #94d500;
+}
+
+/* ----------------------------------------
+	Albums Page
+------------------------------------------- */
+
+#latest_albums {
+	background-color: rgba(20, 19, 17, 1); 
+	padding: 30px 120px 0px 120px;
+	font-family: 'Dosis';
+	cursor: default;
+}
+
+#latest_albums .artist_name {
+	padding: 20px 30px 10px 30px;
+	font-size: 1.3em;
+}
+
+#latest_albums .album_name {
+	padding: 0px 30px 30px 30px;
+	font-size: 1.3em;
+	color: #fff;
+	font-weight: bold;
+}
+
+#latest_albums .release_date {
+	color: #94d500;
+	font-weight: bold;
+}
+
+#latest_albums .genre_tag {
+	color: #94d500;
+	font-weight: bold;
+}
+
+#latest_albums .label_tag {
+	color: #94d500;
+	font-weight: bold;
+}
+
+#latest_albums p {
+	padding: 30px;
+	line-height: 20px;
+}
+
+#latest_albums img {
+	width: 320px;
+	height: auto;
+}
+
+#latest_albums h1 {
+	font-size: 3em;
+	color: #94d500;
+	text-align: center;
+	padding: 15px 0px 5px;
+}
+
+#latest_albums h3 {
+	padding: 0px 30px 5px 30px;
+}
+
+#latest_albums a {
+	text-decoration: none;
+	font-style: normal;
+	color: #fff;
+}
+
+.album_row_01 {
+	color: #fff;
+	background-color: #141311;
+	width: 320px;
+	float: left;
+	margin: 20px 15px 50px 30px;
+	-webkit-transition: all ease 0.7s;
+	-moz-transition: all ease 0.7s;
+	-ms-transition: all ease 0.7s;
+	-o-transition: all ease 0.7s;
+	transition: all ease 0.7s;
+}
+
+.album_row_01:hover {
+	background-color: #000;
+	transition: ease 0.7s;
+	-webkit-transition: all ease 0.7s;
+	-moz-transition: all ease 0.7s;
+	-ms-transition: all ease 0.7s;
+	-o-transition: all ease 0.7s;
+	transition: all ease 0.7s;
+}
+
+.album_row_02 {
+	color: #fff;
+	background-color: #141311;
+	width: 320px;
+	float: left;
+	margin: 20px 15px 50px 15px;
+	-webkit-transition: all ease 0.7s;
+	-moz-transition: all ease 0.7s;
+	-ms-transition: all ease 0.7s;
+	-o-transition: all ease 0.7s;
+	transition: all ease 0.7s;
+}
+
+.album_row_02:hover {
+	background-color: #000;
+	-webkit-transition: all ease 0.7s;
+	-moz-transition: all ease 0.7s;
+	-ms-transition: all ease 0.7s;
+	-o-transition: all ease 0.7s;
+	transition: all ease 0.7s;
+}
+
+.album_row_03 {
+	color: #fff;
+	background-color: #141311;
+	width: 320px;
+	float: left;
+	margin: 20px 30px 50px 15px;
+	-webkit-transition: all ease 0.7s;
+	-moz-transition: all ease 0.7s;
+	-ms-transition: all ease 0.7s;
+	-o-transition: all ease 0.7s;
+	transition: all ease 0.7s;
+}
+
+.album_row_03:hover {
+	background-color: #000;
+	-webkit-transition: all ease 0.7s;
+	-moz-transition: all ease 0.7s;
+	-ms-transition: all ease 0.7s;
+	-o-transition: all ease 0.7s;
+	transition: all ease 0.7s;
+}
+
+.album {
+	font-weight: bold;
+}
+
+/* ----------------------------------------
+	Tracks Page
+------------------------------------------- */
+
+#track_list {
+	background-color: rgba(20, 19, 17, 0.8); 
+	padding: 30px 20px 50px 100px;
+	font-family: 'Dosis';
+	cursor: default;
+}
+
+#track_list img {
+	width: 150px;
+	height: auto;
+	float: left;
+	margin: 25px;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+.list_01 {
+	font-size: 1.1em;
+	width: 565px;
+	float: left;
+	border-radius: 20px;
+	margin-right: 35px;
+}
+
+.list_01 .artistName {
+	padding: 30px 0px 0px 20px; 	
+}
+
+.list_01 .musicTitle {
+	padding: 5px 0px 0px 20px; 
+}
+
+.list_01 .musicGenre {
+	padding: 5px 0px 0px 20px; 	
+}
+
+.list_01 .musicLabel {
+	padding: 5px 0px 0px 20px; 
+}
+
+.list_01 .musicDate {
+	padding: 5px 0px 0px 20px; 
+}
+
+.list_01 .musicLength {
+	padding: 5px 0px 0px 20px; 
+}
+
+.list_02 {
+	font-size: 1.1em;
+	width: 565px;
+	float: left;
+	border-radius: 20px;
+	margin-right: 35px;
+}
+
+.list_02 .artistName {
+	padding: 30px 0px 0px 20px; 	
+}
+
+.list_02 .musicTitle {
+	padding: 5px 0px 0px 20px; 
+}
+
+.list_02 .musicGenre {
+	padding: 5px 0px 0px 20px; 	
+}
+
+.list_02 .musicLabel {
+	padding: 5px 0px 0px 20px; 
+}
+
+.list_02 .musicDate {
+	padding: 5px 0px 0px 20px; 
+}
+
+.list_02 .musicLength {
+	padding: 5px 0px 0px 20px; 
+}
+
+.title {
+	color: #94d500;
+	font-weight: bold;
+}
+
+.description {
+	color: #fff;
+}
+
+.tracks {
+	border-radius: 20px;
+	height: 200px;
+	margin-bottom: 20px;
+	font-size: 1.125em;
+	background-color: #000;
+}
+
+/* ----------------------------------------
+	Artists Page
+------------------------------------------- */
+
+#artists {
+	background-color: rgba(20, 19, 17, 0.8); 
+	padding: 30px 20px 50px 100px;
+	font-family: 'Dosis';  
+}
+
+#column_01, 
+#column_02,
+#column_03,
+#column_04,
+#column_05 {
+	width: 210px;
+	float: left;
+	background-color: #000;
+	color: #fff;
+	margin: 10px;
+}
+
+#artists img {
+	width: 190px;
+	height: auto;
+	border-radius: 10px;
+	-webkit-transition: all ease 0.7s;
+	-moz-transition: all ease 0.7s;
+	-ms-transition: all ease 0.7s;
+	-o-transition: all ease 0.7s;
+	transition: all ease 0.7s;
+}
+
+#artists img:hover {
+	opacity: 0.7;
+	-webkit-transition: all ease 0.7s;
+	-moz-transition: all ease 0.7s;
+	-ms-transition: all ease 0.7s;
+	-o-transition: all ease 0.7s;
+	transition: all ease 0.7s;
+}
+
+.artist_section {
+	padding: 10px;
+}
+
+#column_01, 
+#column_02,
+#column_03,
+#column_04,
+#column_05 {
+	border-radius: 20px;
+}
+
+#artists a {
+	text-decoration: none;
+	color: #ccc;
+	font-family: 'Dosis';
+	font-weight: bold;
+	text-align: center;
+	-webkit-transition: all ease 0.7s;
+	-moz-transition: all ease 0.7s;
+	-ms-transition: all ease 0.7s;
+	-o-transition: all ease 0.7s;
+	transition: all ease 0.7s;
+}
+
+
+#artists a:hover {
+	color: #fff;
+	-webkit-transition: all ease 0.7s;
+	-moz-transition: all ease 0.7s;
+	-ms-transition: all ease 0.7s;
+	-o-transition: all ease 0.7s;
+	transition: all ease 0.7s;	
+}
+
+#artists h1 {
+	padding: 5px 0;
+}
+
+#artists hr { 
+	border: 0;     
+	height: 1px;     
+	background-image: linear-gradient(to right, #000, #fff, #000); 
+	margin: 5px 0px 15px;
+}
+
+#media {
+	background-color: rgba(20, 19, 17, 0.8); 
+	padding: 30px 20px 50px 100px;
+	font-family: 'Dosis';
+}
+
+#video {
+	width: 640px;
+	border-radius: 20px;
+	float: left;
+	background-color: rgba(20, 19, 17, 0.8);
+	cursor: default;
+}
+
+video {
+	width: 640px;
+	height: 480px;	
+}
+
+.center {
+	margin: -50px 20px;
+	width: 600px;
+}
+
+#video h1 {
+	color: #fff;
+	padding: 15px 20px 0px;
+}
+
+#video p {
+	line-height: 20px;
+}
+
+#video iframe {
+	padding: 15px;
+	border-radius: 20px;
+	width: 640px;
+	height: 340px;
+}
+
+#table {
+	background-color: rgba(20, 19, 17, 0.8); 
+	border-radius: 20px;
+	width: 320px;
+	float: left;
+	margin: 0px 30px;
+	padding: 20px 15px;
+	cursor: default;
+}
+
+#table img:first-child {
+	margin: 20px 20px 0;
+}
+
+#table img {
+	width: 120px;
+	height: auto;
+	margin: 0px 20px 0;
+	padding: 10px 10px 5px;
+	border-radius: 20px;
+}
+
+#table h1 {	
+	padding: 0 0 0 30px;
+	font-weight: bold;
+	color: #fff;
+}
+
+#table hr {
+	border: 0;     
+	height: 1px;     
+	background-image: linear-gradient(to right, #fff, #ccc, #000); 
+	margin: 5px 0px 15px 30px;
+}
+
+#table #art_row_01 {
+	width: 140px;
+	float: left;
+}
+
+#table #art_row_02 {
+	width: 140px;
+	float: left;
+}
+
+#table #time {
+	background-color: #94d500;
+	color: #000;
+	font-weight: bold;
+	font-family: 'Dosis'; 
+	border-radius: 10px;
+	margin-bottom: 10px;
+}
+
+table {
+	border: 1; 
+	border-spacing: 10px;
+	border-collapse: separate;
+	width: 80%; 
+	margin: 0 auto;
+}
+
+table .time{
+	color: #94d500;
+}
+
+table tr {
+	color: #fff;
+	font-size: 20px;
+}
+
+table td {
+	padding-left: 10px;
+}
+
+#table h2 {
+	margin: 0 30px 20px;
+	font-weight: bold;
+	color: #fff;
+}
+
+#video p {
+	color: #ccc;
+	padding: 0px 20px 10px;
+} 
+
+#video p:last-child {
+	padding-bottom: 45px;
+}
+
+/* ----------------------------------------
+	Top Button
+------------------------------------------- */
+
+#goTop {
+	border-radius: 5px;
+    background-color: #141311;
+    color: #94d500;
+    padding: 15px;
+    position: fixed;
+    right: 25px;
+    -webkit-transition: all ease 0.7s;
+	-moz-transition: all ease 0.7s;
+	-ms-transition: all ease 0.7s;
+	-o-transition: all ease 0.7s;
+	transition: all ease 0.7s;
+}
+
+#goTop:hover {
+	background-color: #94d500;
+	color: #141311;
+	-webkit-transition: all ease 0.7s;
+	-moz-transition: all ease 0.7s;
+	-ms-transition: all ease 0.7s;
+	-o-transition: all ease 0.7s;
+	transition: all ease 0.7s;
+}
